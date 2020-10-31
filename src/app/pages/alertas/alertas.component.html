@@ -1,0 +1,49 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+    <div class="header-body">
+      
+    </div>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="container-fluid mt--7">
+
+
+  <div class="row">
+    <div class="col">
+      <div >
+    <ngb-accordion #acc="ngbAccordion" >
+      
+      <ngb-panel>
+        <ng-template ngbPanelTitle>
+          <span>Insumos desabastecidos</span>
+        </ng-template>
+        <ng-template ngbPanelContent>
+          <div class="embed-responsive embed-responsive-1by1">
+              <iframe class="embed-responsive-item" src="https://datastudio.google.com/embed/reporting/4f67e4d8-87d7-43a6-8322-459ce46c8a43/page/MtcbB" allowfullscreen></iframe>
+            </div>
+        </ng-template>
+      </ngb-panel>
+      
+      <ngb-panel>
+        <ng-template ngbPanelTitle>
+          <span>Insumos sobre-abastecidos</span>
+        </ng-template>
+        <ng-template ngbPanelContent>
+            Los insumos sobre-abastecidos son los que su saldo actual supera las salidas del insumo en los últimos dos meses.
+            <br/>
+            <br/>
+          <div class="embed-responsive embed-responsive-1by1">
+              <iframe class="embed-responsive-item" src="https://datastudio.google.com/embed/reporting/780a66e6-b744-4834-b7b1-165f4ef46637/page/U9cbB" allowfullscreen></iframe>
+            </div>
+        </ng-template>
+      </ngb-panel>
+      
+      
+      
+    </ngb-accordion>
+  </div>
+</div>
+</div>
+</div>

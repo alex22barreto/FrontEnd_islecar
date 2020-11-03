@@ -1,0 +1,10 @@
+{
+    "/": {
+      "target": "https://southamerica-east1-test-ips-8ebdf.cloudfunctions.net",
+      "secure": true,
+      "pathRewrite": {
+      "^/": ""
+    },
+      "changeOrigin": true
+    }
+  }

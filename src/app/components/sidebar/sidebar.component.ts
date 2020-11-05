@@ -6,8 +6,6 @@ declare interface RouteInfo {
     title: string;
     icon?: string;
     class?: string;
-    root?: string,
-    leaf?:string,
     children?: RouteInfo[];
 }
 export const ROUTES: RouteInfo[] = [
@@ -17,38 +15,188 @@ export const ROUTES: RouteInfo[] = [
     //{ path: '/user-profile', title: 'User profile',  icon:'ni-single-02 text-yellow', class: '', children: [], root: '' },
     //{ path: '/tables', title: 'Tables',  icon:'ni-bullet-list-67 text-red', class: '' },
     { 
-      path: '/ventas', 
+      path: '', 
       title: 'Ventas',  
       icon:'ni-shop text-green', 
       class: '',
-      root: 'Ventas',
       children: [
         {
-          path: '/ventas', 
-          title: 'Ventas1', 
+          path: '/ventas_cliente', 
+          title: 'ventas cliente', 
           icon:'ni-shop text-green', 
-          class: '',
-          leaf: 'Ventas',
+          class: '',          
           children: []
         },
         {
-          path: '/ventas', 
-          title: 'Ventas2', 
+          path: '/ventas_clusters', 
+          title: 'ventas clusters', 
           icon:'ni-shop text-green', 
-          class: '',
-          leaf: 'Ventas',
+          class: '',          
+          children: []
+        },
+        {
+          path: '/ventas_prediccion', 
+          title: 'ventas prediccion', 
+          icon:'ni-shop text-green', 
+          class: '',          
+          children: []
+        },
+        {
+          path: '/ventas_productos', 
+          title: 'ventas productos', 
+          icon:'ni-shop text-green', 
+          class: '',          
+          children: []
+        },
+        {
+          path: '/ventas_segmentoCliente', 
+          title: 'ventas segmentoCliente', 
+          icon:'ni-shop text-green', 
+          class: '',          
+          children: []
+        },
+        {
+          path: '/ventas_valorProducto', 
+          title: 'ventas valorProducto', 
+          icon:'ni-shop text-green', 
+          class: '',          
           children: []
         }
       ]
     },
-    { path: '/inventario', title: 'Inventario',  icon:'ni-chart-bar-32 text-Primary', class: '', children: [{ path: '/inventario', title: 'Inventario',  icon:'ni-chart-bar-32 text-Primary', class: '', children: [], root: '' }], root: '' },
-    { path: '/compras', title: 'Compras',  icon:'ni-cart text-orange', class: '', children: [], root: '' },
-    { path: '/ordenes', title: 'Ordenes',  icon:'ni-single-copy-04 text-info', class: '', children: [], root: '' },
-    { path: '/alertas', title: 'Alertas',  icon:'ni-bell-55 text-red', class: '', children: [], root: '' },
-    { path: '/smartcontract', title: 'SmartContract',  icon:'ni-paper-diploma text-blue', class: '', children: [], root: '' },
-    { path: '/#', title: 'Text-speech',  icon:'ni-note-03 text-yellow', class: '', children: [], root: '' },
-    { path: '/login', title: 'Login',  icon:'ni-key-25 text-info', class: '', children: [], root: '' },
-    { path: '/register', title: 'Register',  icon:'ni-circle-08 text-pink', class: '', children: [], root: '' }
+    { 
+      path: '', 
+      title: 'Inventario',  
+      icon:'ni-chart-bar-32 text-Primary', 
+      class: '', 
+      children: [
+        { 
+          path: '/insumos', 
+          title: 'insumos',  
+          icon:'ni-chart-bar-32 text-Primary', 
+          class: '', 
+          children: []
+        },
+        { 
+          path: '/materia_prima', 
+          title: 'materia prima',  
+          icon:'ni-chart-bar-32 text-Primary', 
+          class: '', 
+          children: []
+        },
+        { 
+          path: '/producto_terminado', 
+          title: 'producto_terminado',  
+          icon:'ni-chart-bar-32 text-Primary', 
+          class: '', 
+          children: []
+        }
+      ]
+	  },
+    { 
+      path: '', 
+      title: 'Compras',  
+      icon:'ni-cart text-orange', 
+      class: '', 
+      children: [
+        { 
+          path: '/compras_proveedor', 
+          title: 'compras proveedor',  
+          icon:'ni-cart text-orange', 
+          class: '', 
+          children: []
+        },{ 
+          path: '/ordenes_sugeridas', 
+          title: 'ordenes sugeridas',  
+          icon:'ni-cart text-orange', 
+          class: '', 
+          children: []
+        }
+      ]
+    },
+    { 
+      path: '', 
+      title: 'Ordenes',  
+      icon:'ni-single-copy-04 text-info', 
+      class: '', 
+      children: [
+        { 
+          path: '/requerimiento_accesorios', 
+          title: 'requerimiento accesorios',  
+          icon:'ni-single-copy-04 text-info', 
+          class: '', 
+          children: []
+        },
+        { 
+          path: '/requerimiento_insumos', 
+          title: 'requerimiento insumos',  
+          icon:'ni-single-copy-04 text-info', 
+          class: '', 
+          children: []
+        }
+      ]
+    },
+    { 
+      path: '/', 
+      title: 'Alertas',  
+      icon:'ni-bell-55 text-red', 
+      class: '', 
+      children: [
+        { 
+          path: '/alerta_desabastesimiento', 
+          title: 'alerta desabastesimiento',  
+          icon:'ni-bell-55 text-red', 
+          class: '', 
+          children: []
+        },
+        { 
+          path: '/alerta_sobreabastesimiento', 
+          title: 'alerta sobreabastesimiento',  
+          icon:'ni-bell-55 text-red', 
+          class: '', 
+          children: []
+        }
+      ]
+    },
+    { 
+      path: '/smartcontract', 
+      title: 'SmartContract',  
+      icon:'ni-paper-diploma text-blue', 
+      class: '', 
+      children: []
+    },
+    { 
+      path: '', 
+      title: 'Indicadores',  
+      icon:'ni-chart-bar-32 text-Primary', 
+      class: '', 
+      children: [
+        { 
+          path: '/inventariosABC', 
+          title: 'inventario ABC',  
+          icon:'ni-chart-bar-32 text-Primary', 
+          class: '', 
+          children: []
+        },
+        { 
+          path: '/rotacionInventarios', 
+          title: 'rotacion Inventarios',  
+          icon:'ni-chart-bar-32 text-Primary', 
+          class: '', 
+          children: []
+        },
+        { 
+          path: '/ventasCruzadas', 
+          title: 'ventas Cruzadas',  
+          icon:'ni-chart-bar-32 text-Primary', 
+          class: '', 
+          children: []
+        }
+      ]
+	  },
+    { path: '/#', title: 'Text-speech',  icon:'ni-note-03 text-yellow', class: '', children: []},
+    { path: '/login', title: 'Login',  icon:'ni-key-25 text-info', class: '', children: []},
+    { path: '/register', title: 'Register',  icon:'ni-circle-08 text-pink', class: '', children: []}
 ];
 
 @Component({

@@ -5,23 +5,49 @@ import { IconsComponent } from '../../pages/icons/icons.component';
 import { MapsComponent } from '../../pages/maps/maps.component';
 import { UserProfileComponent } from '../../pages/user-profile/user-profile.component';
 import { TablesComponent } from '../../pages/tables/tables.component';
-import { VentasComponent } from '../../pages/ventas/ventas.component';
-import { InventarioComponent } from '../../pages/inventario/inventario.component';
-import { ComprasComponent } from '../../pages/compras/compras.component';
-import { OrdenesComponent } from '../../pages/ordenes/ordenes.component';
-import { AlertasComponent } from '../../pages/alertas/alertas.component';
-import { SmartcontractComponent } from '../../pages/smartcontract/smartcontract.component';
+import { Ventas_clienteComponent } from '../../pages/ventas/ventas_cliente/ventas_cliente.component';
+import { Ventas_clustersComponent } from '../../pages/ventas/ventas_clusters/ventas_clusters.component';
+import { Ventas_prediccionComponent } from '../../pages/ventas/ventas_prediccion/ventas_prediccion.component';
+import { Ventas_productosComponent } from '../../pages/ventas/ventas_productos/ventas_productos.component';
+import { Ventas_segmentoClienteComponent } from '../../pages/ventas/ventas_segmentoCliente/ventas_segmentoCliente.component';
+import { Ventas_valorProductoComponent } from '../../pages/ventas/ventas_valorProducto/ventas_valorProducto.component';
+import { InventariosABCComponent } from '../../pages/Indicadores/inventariosABC/inventariosABC.component';
+import { RotacionInventariosComponent } from '../../pages/Indicadores/rotacionInventarios/rotacionInventarios.component';
+import { VentasCruzadasComponent } from '../../pages/Indicadores/ventasCruzadas/ventasCruzadas.component';
+import { InsumosComponent } from '../../pages/inventario/insumos/insumos.component';
+import { Materia_primaComponent } from '../../pages/inventario/materia_prima/materia_prima.component';
+import { Producto_terminadoComponent } from '../../pages/inventario/producto_terminado/producto_terminado.component';
+import { Compras_proveedorComponent } from '../../pages/compras/compras_proveedor/compras_proveedor.component';
+import { Ordenes_sugeridasComponent } from '../../pages/compras/ordenes_sugeridas/ordenes_sugeridas.component';
+import { Requerimiento_accesoriosComponent } from '../../pages/ordenes/requerimiento_accesorios/requerimiento_accesorios.component';
+import { Requerimiento_insumosComponent } from '../../pages/ordenes/requerimiento_insumos/requerimiento_insumos.component';
+import { Alerta_desabastesimientoComponent } from '../../pages/alertas/alerta_desabastesimiento/alerta_desabastesimiento.component';
+import { Alerta_sobreabastesimientoComponent } from '../../pages/alertas/alerta_sobreabastesimiento/alerta_sobreabastesimiento.component';
+import { SmartcontractComponent } from '../../pages/formularios/smartcontract/smartcontract.component';
 import { TextspeechComponent } from '../../pages/textspeech/textspeech.component';
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
     { path: 'user-profile',   component: UserProfileComponent },
     { path: 'tables',         component: TablesComponent },
-    { path: 'ventas',         component: VentasComponent },
-    { path: 'inventario',         component: InventarioComponent },
-    { path: 'compras',         component: ComprasComponent },
-    { path: 'ordenes',         component: OrdenesComponent },
-    { path: 'alertas',         component: AlertasComponent },
+    { path: 'ventas_cliente',         component: Ventas_clienteComponent },
+    { path: 'ventas_clusters',         component: Ventas_clustersComponent },
+    { path: 'ventas_prediccion',         component: Ventas_prediccionComponent },
+    { path: 'ventas_productos',         component: Ventas_productosComponent },
+    { path: 'ventas_segmentoCliente',         component: Ventas_segmentoClienteComponent },
+    { path: 'ventas_valorProducto',         component: Ventas_valorProductoComponent },
+    { path: 'inventariosABC',         component: InventariosABCComponent },
+    { path: 'rotacionInventarios',         component: RotacionInventariosComponent },
+    { path: 'ventasCruzadas',         component: VentasCruzadasComponent },
+    { path: 'insumos',         component: InsumosComponent },
+    { path: 'materia_prima',         component: Materia_primaComponent },
+    { path: 'producto_terminado',         component: Producto_terminadoComponent },
+    { path: 'compras_proveedor',         component: Compras_proveedorComponent },
+    { path: 'ordenes_sugeridas',         component: Ordenes_sugeridasComponent },
+    { path: 'requerimiento_accesorios',         component: Requerimiento_accesoriosComponent },
+    { path: 'requerimiento_insumos',         component: Requerimiento_insumosComponent },
+    { path: 'alerta_desabastesimiento',         component: Alerta_desabastesimientoComponent },
+    { path: 'alerta_sobreabastesimiento',         component: Alerta_sobreabastesimientoComponent },
     { path: 'smartcontract',         component: SmartcontractComponent },
     { path: 'textspeech',         component: TextspeechComponent },
     { path: 'icons',          component: IconsComponent },

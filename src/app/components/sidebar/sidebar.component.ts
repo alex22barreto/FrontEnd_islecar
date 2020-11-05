@@ -191,6 +191,20 @@ export const ROUTES: RouteInfo[] = [
           icon:'ni-chart-bar-32 text-Primary', 
           class: '', 
           children: []
+        },
+        { 
+          path: '/ventasTipoClientePresentacion', 
+          title: 'Ventas Tipo Cliente Presentacion',  
+          icon:'ni-chart-bar-32 text-Primary', 
+          class: '', 
+          children: []
+        },
+        { 
+          path: '/ventasTipoClienteReferencia', 
+          title: 'Ventas Tipo Cliente Referencia',  
+          icon:'ni-chart-bar-32 text-Primary', 
+          class: '', 
+          children: []
         }
       ]
 	  },

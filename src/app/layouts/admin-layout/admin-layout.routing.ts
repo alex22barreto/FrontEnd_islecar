@@ -14,6 +14,8 @@ import { Ventas_valorProductoComponent } from '../../pages/ventas/ventas_valorPr
 import { InventariosABCComponent } from '../../pages/Indicadores/inventariosABC/inventariosABC.component';
 import { RotacionInventariosComponent } from '../../pages/Indicadores/rotacionInventarios/rotacionInventarios.component';
 import { VentasCruzadasComponent } from '../../pages/Indicadores/ventasCruzadas/ventasCruzadas.component';
+import { VentasTipoClientePresentacionComponent } from '../../pages/Indicadores/VentasTipoClientePresentacion/VentasTipoClientePresentacion.component';
+import { VentasTipoClienteReferenciaComponent } from '../../pages/Indicadores/VentasTipoClienteReferencia/VentasTipoClienteReferencia.component';
 import { InsumosComponent } from '../../pages/inventario/insumos/insumos.component';
 import { Materia_primaComponent } from '../../pages/inventario/materia_prima/materia_prima.component';
 import { Producto_terminadoComponent } from '../../pages/inventario/producto_terminado/producto_terminado.component';
@@ -39,6 +41,8 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'inventariosABC',         component: InventariosABCComponent },
     { path: 'rotacionInventarios',         component: RotacionInventariosComponent },
     { path: 'ventasCruzadas',         component: VentasCruzadasComponent },
+    { path: 'ventasTipoClientePresentacion',         component: VentasTipoClientePresentacionComponent },
+    { path: 'ventasTipoClienteReferencia',         component: VentasTipoClienteReferenciaComponent },
     { path: 'insumos',         component: InsumosComponent },
     { path: 'materia_prima',         component: Materia_primaComponent },
     { path: 'producto_terminado',         component: Producto_terminadoComponent },

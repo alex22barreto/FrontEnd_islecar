@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RotacionInventariosComponent } from './RotacionInventarios.component';
+import { RotacionInventariosComponent } from './rotacionInventarios.component';
 
 describe('RotacionInventariosComponent', () => {
   let component: RotacionInventariosComponent;

@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-RotacionInventarios',
-  templateUrl: './RotacionInventarios.component.html',
-  styleUrls: ['./RotacionInventarios.component.scss']
+  selector: 'app-rotacionInventarios',
+  templateUrl: './rotacionInventarios.component.html',
+  styleUrls: ['./rotacionInventarios.component.scss']
 })
 export class RotacionInventariosComponent implements OnInit {
 

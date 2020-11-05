@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Alerta_sobreabastesimientoComponent } from './Alerta_sobreabastesimiento.component';
+import { Alerta_sobreabastesimientoComponent } from './alerta_sobreabastesimiento.component';
 
 describe('Alerta_sobreabastesimientoComponent', () => {
   let component: Alerta_sobreabastesimientoComponent;

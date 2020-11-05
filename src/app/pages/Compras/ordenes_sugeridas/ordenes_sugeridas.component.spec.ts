@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Ordenes_sugeridasComponent } from './Ordenes_sugeridas.component';
+import { Ordenes_sugeridasComponent } from './ordenes_sugeridas.component';
 
 describe('Ordenes_sugeridasComponent', () => {
   let component: Ordenes_sugeridasComponent;

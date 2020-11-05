@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Requerimiento_accesoriosComponent } from './Requerimiento_accesorios.component';
+import { Requerimiento_accesoriosComponent } from './requerimiento_accesorios.component';
 
 describe('Requerimiento_accesoriosComponent', () => {
   let component: Requerimiento_accesoriosComponent;

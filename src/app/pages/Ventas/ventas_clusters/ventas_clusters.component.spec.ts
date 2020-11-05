@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Ventas_clustersComponent } from './Ventas_clusters.component';
+import { Ventas_clustersComponent } from './ventas_clusters.component';
 
 describe('Ventas_clustersComponent', () => {
   let component: Ventas_clustersComponent;

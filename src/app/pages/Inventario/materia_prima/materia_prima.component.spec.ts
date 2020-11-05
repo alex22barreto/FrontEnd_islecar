@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Materia_primaComponent } from './Materia_prima.component';
+import { Materia_primaComponent } from './materia_prima.component';
 
 describe('Materia_primaComponent', () => {
   let component: Materia_primaComponent;

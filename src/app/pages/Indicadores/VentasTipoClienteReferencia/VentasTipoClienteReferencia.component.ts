@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-ventasTipoClienteReferencia',
-  templateUrl: './ventasTipoClienteReferencia.component.html',
-  styleUrls: ['./ventasTipoClienteReferencia.component.scss']
+  selector: 'app-VentasTipoClienteReferencia',
+  templateUrl: './VentasTipoClienteReferencia.component.html',
+  styleUrls: ['./VentasTipoClienteReferencia.component.scss']
 })
 export class VentasTipoClienteReferenciaComponent implements OnInit {
 

@@ -17,7 +17,7 @@ export class ProductsService {
   ) { }
   
   getAllProducts() {
-    return this.http.post<Product[]>(`listaProductosTerminados`,"");
+    return this.http.post<Product[]>(`listaProductosTerminados`,{"message":""});
   }
 
   getProduct(message: string) {

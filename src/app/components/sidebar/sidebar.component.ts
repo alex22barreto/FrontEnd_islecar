@@ -137,7 +137,7 @@ export const ROUTES: RouteInfo[] = [
       ]
     },
     { 
-      path: '/', 
+      path: '', 
       title: 'Alertas',  
       icon:'ni-bell-55 text-red', 
       class: '', 
@@ -159,11 +159,25 @@ export const ROUTES: RouteInfo[] = [
       ]
     },
     { 
-      path: '/smartcontract', 
-      title: 'SmartContract',  
+      path: '', 
+      title: 'Smart Contract',  
       icon:'ni-paper-diploma text-blue', 
       class: '', 
-      children: []
+      children: [
+        { 
+          path: '/formatoVentas', 
+          title: 'Formato Ventas',  
+          icon:'ni-paper-diploma text-blue', 
+          class: '', 
+          children: []
+        },{ 
+          path: '/formatoCompras', 
+          title: 'Formato Compras',  
+          icon:'ni-paper-diploma text-blue', 
+          class: '', 
+          children: []
+        }
+      ]
     },
     { 
       path: '', 
@@ -207,7 +221,14 @@ export const ROUTES: RouteInfo[] = [
           children: []
         }
       ]
-	  }
+    },
+    { 
+      path: '/googleDriveConexion', 
+      title: 'Conexion Google Drive',  
+      icon:'ni-paper-diploma text-blue', 
+      class: '', 
+      children: []
+    }
     //{ path: '/#', title: 'Text-speech',  icon:'ni-note-03 text-yellow', class: '', children: []},
     //{ path: '/login', title: 'Login',  icon:'ni-key-25 text-info', class: '', children: []},
     //{ path: '/register', title: 'Register',  icon:'ni-circle-08 text-pink', class: '', children: []}

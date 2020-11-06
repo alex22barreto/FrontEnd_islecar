@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SmartcontractComponent } from './smartcontract.component';
+import { FormatoComprasComponent } from './formatoCompras.component';
 
-describe('SmartcontractComponent', () => {
-  let component: SmartcontractComponent;
-  let fixture: ComponentFixture<SmartcontractComponent>;
+describe('FormatoComprasComponent', () => {
+  let component: FormatoComprasComponent;
+  let fixture: ComponentFixture<FormatoComprasComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SmartcontractComponent ]
+      declarations: [ FormatoComprasComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SmartcontractComponent);
+    fixture = TestBed.createComponent(FormatoComprasComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

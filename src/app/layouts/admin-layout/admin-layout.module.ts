@@ -31,7 +31,9 @@ import { Requerimiento_accesoriosComponent } from '../../pages/Ordenes/requerimi
 import { Requerimiento_insumosComponent } from '../../pages/Ordenes/requerimiento_insumos/requerimiento_insumos.component';
 import { Alerta_desabastesimientoComponent } from '../../pages/Alertas/alerta_desabastesimiento/alerta_desabastesimiento.component';
 import { Alerta_sobreabastesimientoComponent } from '../../pages/Alertas/alerta_sobreabastesimiento/alerta_sobreabastesimiento.component';
-import { SmartcontractComponent } from '../../pages/formularios/smartcontract/smartcontract.component';
+import { FormatoVentasComponent } from '../../pages/formularios/formatoVentas/formatoVentas.component';
+import { FormatoComprasComponent } from '../../pages/formularios/formatoCompras/formatoCompras.component';
+import { GoogleDriveConexionComponent } from '../../pages/GoogleDriveConexion/GoogleDriveConexion.component';
 import { TextspeechComponent } from '../../pages/textspeech/textspeech.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { ToastrModule } from 'ngx-toastr';
@@ -69,7 +71,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     Requerimiento_insumosComponent,
     Alerta_desabastesimientoComponent,
     Alerta_sobreabastesimientoComponent,
-    SmartcontractComponent,
+    FormatoVentasComponent,
+    FormatoComprasComponent,
+    GoogleDriveConexionComponent,
     TextspeechComponent,
     IconsComponent,
     MapsComponent

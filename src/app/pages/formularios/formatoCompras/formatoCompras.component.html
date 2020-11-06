@@ -1,4 +1,4 @@
-<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+<div class="header bg-gradient-danger pb-1 pt-5 pt-md-8">
   <div class="container-fluid">
     <div class="header-body">
       
@@ -7,7 +7,7 @@
 </div>
 
 <!-- Page content -->
-<div class="container-fluid mt--7">
+<div class="container-fluid mt--3">
 
 
   <div class="row">
@@ -26,12 +26,12 @@
                 <div class="row">
                   <div class="col-lg-4">
                     <div class="form-group">
-                      <label class="form-control-label" for="input-username">producto:</label>
+                      <label class="form-control-label" for="input-username">Material:</label>
                       <br/>
 
                       <select (change)="changeWebsite($event)">
                           <option disabled>Seleccione un producto</option>
-                          <option *ngFor="let web of websiteList">{{web.CodigoProducto}}</option>
+                          <option *ngFor="let material of listMateriales">{{material.CodigoMaterial}}</option>
                       </select>
 
 
@@ -78,7 +78,7 @@
                 <div class="row">
                   <div class="col-lg-4">
                     <div class="form-group">
-                      <label class="form-control-label" for="cantidadDisponible">Cantidad Disponible:</label>
+                      <label class="form-control-label" for="cantidadDisponible">Cantidad en Inventario:</label>
                       <br/>
                       <label class="form-control-label" for="input-cantidadDisponible">{{prodCantidadDisponible.value }}</label>
                     </div>

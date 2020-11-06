@@ -25,7 +25,9 @@ import { Requerimiento_accesoriosComponent } from '../../pages/Ordenes/requerimi
 import { Requerimiento_insumosComponent } from '../../pages/Ordenes/requerimiento_insumos/requerimiento_insumos.component';
 import { Alerta_desabastesimientoComponent } from '../../pages/Alertas/alerta_desabastesimiento/alerta_desabastesimiento.component';
 import { Alerta_sobreabastesimientoComponent } from '../../pages/Alertas/alerta_sobreabastesimiento/alerta_sobreabastesimiento.component';
-import { SmartcontractComponent } from '../../pages/formularios/smartcontract/smartcontract.component';
+import { FormatoVentasComponent } from '../../pages/formularios/formatoVentas/formatoVentas.component';
+import { FormatoComprasComponent } from '../../pages/formularios/formatoCompras/formatoCompras.component';
+import { GoogleDriveConexionComponent } from '../../pages/GoogleDriveConexion/GoogleDriveConexion.component';
 import { TextspeechComponent } from '../../pages/textspeech/textspeech.component';
 
 export const AdminLayoutRoutes: Routes = [
@@ -52,7 +54,9 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'requerimiento_insumos',         component: Requerimiento_insumosComponent },
     { path: 'alerta_desabastesimiento',         component: Alerta_desabastesimientoComponent },
     { path: 'alerta_sobreabastesimiento',         component: Alerta_sobreabastesimientoComponent },
-    { path: 'smartcontract',         component: SmartcontractComponent },
+    { path: 'formatoVentas',         component: FormatoVentasComponent },
+    { path: 'formatoCompras',         component: FormatoComprasComponent },
+    { path: 'googleDriveConexion',         component: GoogleDriveConexionComponent },
     { path: 'textspeech',         component: TextspeechComponent },
     { path: 'icons',          component: IconsComponent },
     { path: 'maps',           component: MapsComponent }

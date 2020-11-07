@@ -9,3 +9,5 @@ handlers:
 - url: /
   static_files: dist/index.html
   upload: dist/index.html
+  http_headers:
+    Access-Control-Allow-Origin: https://test-ips-8ebdf.uc.r.appspot.com

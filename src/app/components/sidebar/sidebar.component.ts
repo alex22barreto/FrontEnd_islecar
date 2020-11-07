@@ -228,9 +228,9 @@ export const ROUTES: RouteInfo[] = [
       icon:'ni-paper-diploma text-blue', 
       class: '', 
       children: []
-    }
+    },
     //{ path: '/#', title: 'Text-speech',  icon:'ni-note-03 text-yellow', class: '', children: []},
-    //{ path: '/login', title: 'Login',  icon:'ni-key-25 text-info', class: '', children: []},
+    { path: '/login', title: 'Login',  icon:'ni-key-25 text-info', class: '', children: []}
     //{ path: '/register', title: 'Register',  icon:'ni-circle-08 text-pink', class: '', children: []}
 ];
 

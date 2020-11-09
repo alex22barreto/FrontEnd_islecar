@@ -23,11 +23,13 @@
         <div class="card-header bg-transparent pb-5">
           <div class="text-muted text-center mt-2 mb-3"><small>Sign in with</small></div>
           <div class="btn-wrapper text-center">
-            <a href="javascript:void(0)" class="btn btn-neutral btn-icon">
+            <!--
+            <a href="javascript:void(0)" class="btn btn-neutral btn-icon" disabled="true" >
               <span class="btn-inner--icon"><img src="../assets/img/icons/common/github.svg"></span>
               <span class="btn-inner--text">Github</span>
             </a>
-            <a href="javascript:void(0)" (click)="logeogmail()" class="btn btn-neutral btn-icon">
+            -->
+            <a href="javascript:void(0)" (click)="authService.GoogleAuth()" class="btn btn-neutral btn-icon">
               <span class="btn-inner--icon"><img src="../assets/img/icons/common/google.svg"></span>
               <span class="btn-inner--text">Google</span>
             </a>
@@ -44,7 +46,7 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                 </div>
-                <input class="form-control" placeholder="Email" type="email">
+                <input class="form-control" placeholder="Email" type="email" #userName required>
               </div>
             </div>
             <div class="form-group">
@@ -52,7 +54,7 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                 </div>
-                <input class="form-control" placeholder="Password" type="password">
+                <input class="form-control" placeholder="Password" type="password" #userPassword required>
               </div>
             </div>
             <div class="custom-control custom-control-alternative custom-checkbox">
@@ -62,17 +64,17 @@
               </label>
             </div>
             <div class="text-center">
-              <button type="button" class="btn btn-primary my-4">Sign in</button>
+              <button type="button" class="btn btn-primary my-4" (click)="authService.SignIn(userName.value, userPassword.value)">Sign in</button>
             </div>
           </form>
         </div>
       </div>
       <div class="row mt-3">
         <div class="col-6">
-          <a href="javascript:void(0)" class="text-light"><small>Forgot password?</small></a>
+          <a class="text-info redirect" routerLink="/missingPassword"><small>¿Olvido su contraseña?</small></a>
         </div>
         <div class="col-6 text-right">
-          <a href="javascript:void(0)" class="text-light"><small>Create new account</small></a>
+          <a class="text-info redirect" routerLink="/register"><small>Crear nueva cuenta</small></a>
         </div>
       </div>
     </div>

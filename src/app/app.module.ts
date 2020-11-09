@@ -18,6 +18,8 @@ import { AngularFireAuthModule } from "@angular/fire/auth";
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 
+import { AutenticacionService } from './core/services/autenticacion/autenticacion.service';
+
 
 @NgModule({
   imports: [
@@ -38,7 +40,7 @@ import { environment } from '../environments/environment';
     AdminLayoutComponent,
     AuthLayoutComponent
   ],
-  providers: [],
+  providers: [AutenticacionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { AutenticacionService } from './../../core/services/autenticacion/autenticacion.service';
 
 @Component({
-  selector: 'app-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss']
+  selector: 'app-missing-password',
+  templateUrl: './missing-password.component.html',
+  styleUrls: ['./missing-password.component.scss']
 })
-export class RegisterComponent implements OnInit {
+export class MissingPasswordComponent implements OnInit {
 
   constructor(
     public authService: AutenticacionService

@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { AutenticacionService } from './../../core/services/autenticacion/autenticacion.service';
 
 var config = {
   apiKey: "AIzaSyBAcwcGyaYCpmcXwg4yJOIPhckE1l-DEHE",
@@ -13,7 +14,9 @@ var userIdToken = null;
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit, OnDestroy {
-  constructor() {}
+  constructor(
+    public authService: AutenticacionService
+  ) {}
 
   ngOnInit() {
     

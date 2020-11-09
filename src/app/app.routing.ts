@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
+import { AuthGuard  } from './core/services/guardia/auth.guard';
 
 const routes: Routes =[
   {
@@ -13,7 +14,8 @@ const routes: Routes =[
     pathMatch: 'full',
   }, {
     path: '',
-    component: AdminLayoutComponent,
+    component: AdminLayoutComponent
+    , canActivate: [AuthGuard] ,
     children: [
       {
         path: '',
@@ -31,7 +33,7 @@ const routes: Routes =[
     ]
   }, {
     path: '**',
-    redirectTo: 'dashboard'
+    redirectTo: 'login'
   }
 ];
 
@@ -44,6 +46,7 @@ const routes: Routes =[
     })
   ],
   exports: [
+    RouterModule
   ],
 })
 export class AppRoutingModule { }

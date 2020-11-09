@@ -24,11 +24,13 @@
         <div class="card-header bg-transparent pb-5">
           <div class="text-muted text-center mt-2 mb-4"><small>Sign up with</small></div>
           <div class="text-center">
+            <!--
             <a href="javascript:void(0)" class="btn btn-neutral btn-icon mr-4">
               <span class="btn-inner--icon"><img src="assets/img/icons/common/github.svg"></span>
               <span class="btn-inner--text">Github</span>
             </a>
-            <a href="javascript:void(0)" class="btn btn-neutral btn-icon">
+            -->
+            <a href="javascript:void(0)" (click)="authService.GoogleAuth()" class="btn btn-neutral btn-icon">
               <span class="btn-inner--icon"><img src="assets/img/icons/common/google.svg"></span>
               <span class="btn-inner--text">Google</span>
             </a>
@@ -39,6 +41,7 @@
             <small>Or sign up with credentials</small>
           </div>
           <form role="form">
+          <!--  
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
@@ -46,13 +49,14 @@
                 </div>
                 <input class="form-control" placeholder="Name" type="text">
               </div>
-            </div>
+            </div> 
+          -->
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                 </div>
-                <input class="form-control" placeholder="Email" type="email">
+                <input class="form-control" placeholder="Email" type="email" #userEmail required>
               </div>
             </div>
             <div class="form-group">
@@ -60,7 +64,7 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                 </div>
-                <input class="form-control" placeholder="Password" type="password">
+                <input class="form-control" placeholder="Password" type="password"#userPwd required >
               </div>
             </div>
             <div class="text-muted font-italic"><small>password strength: <span class="text-success font-weight-700">strong</span></small></div>
@@ -75,7 +79,11 @@
               </div>
             </div>
             <div class="text-center">
-              <button type="button" class="btn btn-primary mt-4">Create account</button>
+              <button type="button" class="btn btn-primary mt-4" (click)="authService.SignUp(userEmail.value, userPwd.value)">Create account</button>
+            </div>
+            <div class="text-center">
+              <br/>
+              <a class="text-info redirect" routerLink="/login"><small>Iniciar sesion</small></a>
             </div>
           </form>
         </div>

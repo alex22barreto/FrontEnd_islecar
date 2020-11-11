@@ -22,42 +22,42 @@ export const ROUTES: RouteInfo[] = [
       children: [
         {
           path: '/ventas_cliente', 
-          title: 'ventas cliente', 
+          title: 'Por cliente', 
           icon:'ni-shop text-green', 
           class: '',          
           children: []
         },
         {
           path: '/ventas_clusters', 
-          title: 'ventas clusters', 
+          title: 'Segmento de clienetes', 
           icon:'ni-shop text-green', 
           class: '',          
           children: []
         },
         {
           path: '/ventas_prediccion', 
-          title: 'ventas prediccion', 
+          title: 'Proyecciones', 
           icon:'ni-shop text-green', 
           class: '',          
           children: []
         },
         {
           path: '/ventas_productos', 
-          title: 'ventas productos', 
+          title: 'Por productos', 
           icon:'ni-shop text-green', 
           class: '',          
           children: []
         },
         {
           path: '/ventas_segmentoCliente', 
-          title: 'ventas segmentoCliente', 
+          title: 'Ventas por segmento Cliente', 
           icon:'ni-shop text-green', 
           class: '',          
           children: []
         },
         {
           path: '/ventas_valorProducto', 
-          title: 'ventas valorProducto', 
+          title: 'Por Ingresos', 
           icon:'ni-shop text-green', 
           class: '',          
           children: []
@@ -160,7 +160,7 @@ export const ROUTES: RouteInfo[] = [
     },
     { 
       path: '', 
-      title: 'Smart Contract',  
+      title: 'Pedidos',  
       icon:'ni-paper-diploma text-blue', 
       class: '', 
       children: [
@@ -219,12 +219,19 @@ export const ROUTES: RouteInfo[] = [
           icon:'ni-chart-bar-32 text-Primary', 
           class: '', 
           children: []
+        },
+        { 
+          path: '/categoriasInsumo', 
+          title: 'Categorías de Insumo',  
+          icon:'ni-chart-bar-32 text-Primary', 
+          class: '', 
+          children: []
         }
       ]
     },
     { 
       path: '/googleDriveConexion', 
-      title: 'Conexion Google Drive',  
+      title: 'Cargar Datos',  
       icon:'ni-paper-diploma text-blue', 
       class: '', 
       children: []

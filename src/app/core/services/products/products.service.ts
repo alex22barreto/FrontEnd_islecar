@@ -20,20 +20,20 @@ export class ProductsService {
 
   getAllProducts() {
 
-    return this.http.post<Product[]>(`https://southamerica-east1-test-ips-8ebdf.cloudfunctions.net/listaProductosTerminados`,"");
+    return this.http.post<Product[]>(`listaProductosTerminados`,"");
 
   }
 
   getProduct(message: string) {
     console.log(message);
-    return this.http.post<ProductDetalle>(`https://southamerica-east1-test-ips-8ebdf.cloudfunctions.net/ConsultarInventarioBigQuery`,
+    return this.http.post<ProductDetalle>(`ConsultarInventarioBigQuery`,
     {"message":message}
     );
   }
 
   getProductIPFSvalor(codigoProducto: string) {
 
-    return this.http.post<IPFSvalor>(`https://southamerica-east1-test-ips-8ebdf.cloudfunctions.net/consultarDatosIPFS`,{
+    return this.http.post<IPFSvalor>(`consultarDatosIPFS`,{
       "codigo": codigoProducto,
       "tipoOperaciones":"2",
       "cantidad":"1",
@@ -43,7 +43,7 @@ export class ProductsService {
 
   getProductIPFSdescuento(codigoProducto: string, cantidad:number) {
 
-    return this.http.post<IPFSdescueto>(`https://southamerica-east1-test-ips-8ebdf.cloudfunctions.net/consultarDatosIPFS`,{
+    return this.http.post<IPFSdescueto>(`consultarDatosIPFS`,{
       "codigo": codigoProducto,
       "tipoOperaciones":"2",
       "cantidad":cantidad,
@@ -53,7 +53,7 @@ export class ProductsService {
 
   getValorTotalproducto(producto: number, cantidad:number, precio:number, descuento:number) {
 
-    return this.http.post<any>(`https://southamerica-east1-test-ips-8ebdf.cloudfunctions.net/valorTotalProducto`,{
+    return this.http.post<any>(`valorTotalProducto`,{
       "producto": producto,
       "precio": precio,
       "cantidad": cantidad,
@@ -63,7 +63,7 @@ export class ProductsService {
 
   postGuardadOrdenVenta(codigoProducto: string, cantidad:number, precioUnitario:number, descuento:number, fecha:Date, precioTotal:number, cantidadDisponible:number, pK_Productos:number ) {
 
-    return this.http.post<any>(`https://southamerica-east1-test-ips-8ebdf.cloudfunctions.net/guardarOrdenProducto`,{
+    return this.http.post<any>(`guardarOrdenProducto`,{
       "fecha": fecha,
       "cantidad": cantidad,
       "descuento": descuento,

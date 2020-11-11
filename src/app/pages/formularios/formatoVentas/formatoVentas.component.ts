@@ -98,7 +98,12 @@ export class FormatoVentasComponent implements OnInit {
     this.productsService.postGuardadOrdenVenta(this.codigoProducto, this.input_cantidad, this.prodPrecioUnitario.value, this.prodDescuento.value, this.input_fecha, this.prodPrecioTotal.value, this.prodCantidadDisponible.value, this.idProducto)
       .subscribe(gardarResult => {
         console.log(gardarResult);
+        //if(gardarResult.status==200){
+          //alert("Registro exitoso");
+        //}
+        
       });
+      alert("Registro exitoso");
       //this.router.navigate(['./admin/products']);
     
   }

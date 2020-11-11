@@ -32,7 +32,7 @@ export class InsumosService {
 
   getProductIPFSvalor(codigoProducto: string) {
 
-    return this.http.post<IPFSvalor>(`https://southamerica-east1-test-ips-8ebdf.cloudfunctions.net/consultarDatosIPFS`,{
+    return this.http.post<IPFSvalor>(`consultarDatosIPFS`,{
       "codigo": codigoProducto,
       "tipoOperaciones":"1",
       "cantidad":"1",
@@ -42,7 +42,7 @@ export class InsumosService {
 
   getProductIPFSdescuento(codigoProducto: string, cantidad:number) {
 
-    return this.http.post<IPFSdescueto>(`https://southamerica-east1-test-ips-8ebdf.cloudfunctions.net/consultarDatosIPFS`,{
+    return this.http.post<IPFSdescueto>(`consultarDatosIPFS`,{
       "codigo": codigoProducto,
       "tipoOperaciones":"1",
       "cantidad":cantidad,
@@ -52,7 +52,7 @@ export class InsumosService {
 
   getValorTotalproducto(producto: number, cantidad:number, precio:number, descuento:number) {
 
-    return this.http.post<any>(`https://southamerica-east1-test-ips-8ebdf.cloudfunctions.net/valorTotalProducto`,{
+    return this.http.post<any>(`valorTotalProducto`,{
       "producto": producto,
       "precio": precio,
       "cantidad": cantidad,
@@ -75,7 +75,7 @@ export class InsumosService {
     console.log(cantidadDisponible);
     console.log(pK_Productos);
 
-    return this.http.post<any>(`https://southamerica-east1-test-ips-8ebdf.cloudfunctions.net/guardarOrdenProducto`,{
+    return this.http.post<any>(`guardarOrdenProducto`,{
       "fecha": fecha,
       "cantidad": cantidad,
       "descuento": descuento,

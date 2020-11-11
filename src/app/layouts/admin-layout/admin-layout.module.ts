@@ -22,6 +22,7 @@ import { RotacionInventariosComponent } from '../../pages/Indicadores/rotacionIn
 import { VentasCruzadasComponent } from '../../pages/Indicadores/ventasCruzadas/ventasCruzadas.component';
 import { VentasTipoClientePresentacionComponent } from '../../pages/Indicadores/VentasTipoClientePresentacion/VentasTipoClientePresentacion.component';
 import { VentasTipoClienteReferenciaComponent } from '../../pages/Indicadores/VentasTipoClienteReferencia/VentasTipoClienteReferencia.component';
+import { CategoriasInsumoComponent } from '../../pages/Indicadores/categoriasInsumo/categoriasInsumo.component';
 import { InsumosComponent } from '../../pages/Inventario/insumos/insumos.component';
 import { Materia_primaComponent } from '../../pages/Inventario/materia_prima/materia_prima.component';
 import { Producto_terminadoComponent } from '../../pages/Inventario/producto_terminado/producto_terminado.component';
@@ -62,6 +63,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     VentasCruzadasComponent,
     VentasTipoClientePresentacionComponent,
     VentasTipoClienteReferenciaComponent,
+    CategoriasInsumoComponent,
     InsumosComponent,
     Materia_primaComponent,
     Producto_terminadoComponent,
